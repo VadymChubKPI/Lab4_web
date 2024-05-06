@@ -1,0 +1,124 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 1.04em;
+    font-family: "San Francisco", Arial, sans-serif;
+}
+
+#button-red, #button-yellow, #button-green {
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    position: absolute;
+    top: 2%;
+}
+
+#button-red {
+    background-color: #ff5f57;
+    left: 4%;
+}
+
+#button-yellow {
+    background-color: #feb429;
+    left: 14%;
+}
+
+#button-green {
+    background-color: #24c138;
+    left: 24%;
+}
+
+#calculator {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-40%, -40%);
+    width: 240px;
+    height: 320px;
+}
+
+#display {
+    color: #ffffff;
+    background-color: #54535a;
+    font-size: 2.5em;
+    text-align: right;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px 15px 10px;
+}
+
+#keys {
+    display: flex;
+}
+
+.keyboard {
+    flex: 1;
+    width: 200px;
+}
+
+.flex-num, #Func {
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-num > div, #Func > button {
+    line-height: 50px;
+    width: 60px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+    color: white;
+    background-color: #5e5c63;
+}
+
+.bottom {
+    display: flex;
+}
+
+.Zero-button {
+    line-height: 50px;
+    width: 120px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+    color: #ffffff;
+    background-color: #5e5c63;
+    border-bottom-left-radius: 15px;
+}
+
+.Coma-button {
+    line-height: 50px;
+    width: 60px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid black;
+    color: #ffffff;
+    background-color: #5e5c63;
+}
+
+.operators {
+    flex: 1;
+    flex-direction: column;
+    width: 60px;
+    color: #ffffff;
+}
+
+.operators > div {
+    line-height: 50px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #ff950c;
+}
+
+#Func > button {
+    background: linear-gradient(90deg, rgba(82, 81, 88, 1) 0%, rgba(79, 77, 85, 1) 100%, rgba(69, 67, 75, 1) 100%);
+}
+
+.equality {
+    border-bottom-right-radius: 15px;
+}
